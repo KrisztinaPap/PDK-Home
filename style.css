@@ -8,6 +8,24 @@
   --pdk-yellow: #FFD700;
 }
 
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--pdk-darkgray);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 1800px;
+  position: relative;
+}
+
 /* Google Fonts */
 
 h1, 
@@ -16,7 +34,7 @@ h3,
 h4,
 .section_title {
   font-family: 'Roboto', sans-serif;
-  color: var(--pdk-yellow);
+  color: var(--pdk-orange);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -26,61 +44,21 @@ h1 {
   text-align: center;
 }
 
-.section_title {
+h2 {
   font-size: 2rem;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--pdk-darkgray);
-    text-decoration: none;
+body {
+  min-height: 400px;
+  clear: both;
 }
 
-html a {
-  text-decoration: none;
-}
-
-/* Top Navigation menu */
-
-.topnav {
-    background-color: var(--pdk-darkgray);
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: var(--pdk-yellow);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: var(--pdk-orange);
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: var(--pdk-blue);
-    color: var(--pdk-yellow);
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
 
 /* Main layout - FLEX when over 900px wide */
 
 .row {
-  text-align: center;;
+  text-align: center;
 }
-
 
 @media screen and (min-width: 900px) {
   .row {
@@ -92,24 +70,64 @@ html a {
 .column {
   flex: 50%;
   padding: 1rem 2rem;
+
 }
 
 /* Main sections formatting */
 
-#pockets_section {
-  background-color: var(--pdk-orange);
-  color: var(--pdk-darkgray);
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+  display: block;
+  margin: auto;
 }
 
-#malro_section {
-  background-color: var(--pdk-blue);
-  color: var(--pdk-lightgray);
+img {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card_container {
+  padding: 2px 16px;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.social_icons {
+  font-size: 4rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 /* Footer */
 .footer {
   background-color: var(--pdk-darkgray);
   color: var(--pdk-yellow);
+  position: absolute;
+  bottom: 0;
+  min-height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer p {
+  color: var(--pdk-yellow);
+}
+
+.copyright {
+  text-align: center;
 }
 
 /* Buttons */
@@ -129,26 +147,10 @@ html a {
 
 /* Media queries */
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+@media screen and (min-width: 1400px) {
+  .card {
+    max-width: 80%;
   }
 }
-  
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+
+
