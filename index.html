@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>PocketsDK Home</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="script.js"></script>
   </head>
 
@@ -22,10 +22,43 @@
   </header>
 
   <body>
-    <h1>PocketsDK's Home</h1>
+    <div>
+      <h1>PocketsDK's Home</h1>
+    </div><!-- end of page title area -->   
+      
+    <div class="row">
+      
+      <div class="column" id="pockets_section">
+        <div class="section_title">
+          <h2>PocketsDK</h2>
+        </div><!-- End of section title -->
+        <div class="section_body">
+          Section Body Text<br>
+          <button class="join_button" onclick="window.location.href='';">JOIN</button>
+        </div><!-- End of section body -->
+        <div class="section_footer">
+          Section Footer - links
+        </div><!-- End of section footer -->
+      </div><!-- End of pockets div -->
 
-
+      <div class="column" id="malro_section">
+        <div class="section_title">
+          <h2>MALRO</h2>
+        </div><!-- End of section title -->
+        <div class="section_body">
+          Section Body Text<br>
+          <button class="join_button" onclick="window.location.href='';">JOIN</button>
+        </div><!-- End of section body -->
+        <div class="section_footer">
+          Section Footer - links
+        </div><!-- End of section footer -->
+      </div><!-- End of malro div -->
+      
+    </div><!-- End of 2-column layout div -->
 
   </body>
+  <footer class="footer">
+    This is the footer
+  </footer>
 
 </html>
