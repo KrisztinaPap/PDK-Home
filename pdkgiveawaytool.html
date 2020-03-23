@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PDK Giveaway Tool</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="script.js"></script>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+  
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#pockets">Pockets</a>
+        <a href="#malro">MALRO</a>
+        <a href="javascript:void(0);" class="icon" onclick="myTopnav()">
+          <i class="fa fa-bars"></i>
+      </div>
+        
+    </header>
+  <body>
+    <h1>PocketsDK's Giveaway Tool</h1>
+
+    <section>
+        <h2>
+            Enter data:
+        </h2>           
+            <label for="title">Contest Title:</label><br>
+            <input type="text" id="title_input" name="title" required autofocus><br>
+            <label for="date">Draw Date:</label><br>
+            <input type="date" id="date_input" name="date" required><br>
+            <label for="contestants">Copy paste the names of the contestants (one name per line with no punctuation) in the box below:</label><br>
+            <textarea id="contestants_input" name="contestants" cols="40" rows="5" required></textarea><br>
+            <input type="submit" onclick="showInfo();"><br>
+    </section>
+    <section>
+        <h2>
+            Contest Info:
+        </h2>
+        <span id='contestTitle'></span>
+        <p id='contestDate'></p>
+        <p id='numberOfContestants'></p>
+        <p id='contestants'></p>
+    </section>
+    <section>
+        <h2>
+            It is time to choose our winner!
+        </h2>
+        <button type="button" onclick="showWinner();">Let's roll!</button>
+        <p id='winner'></p>
+    </section>
+
+  </body>
+</html>
