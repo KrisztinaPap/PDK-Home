@@ -11,7 +11,21 @@
   </head>
 
   <header>
-    
+    <div class="topnav" id="myTopnav">
+      <a href="/index.html" class="active">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/everesources.html">EVE Online</a>
+          <a href="/factorioresources.html">Factorio</a>
+          <a href="/mtgresources.html">MTG</a>
+          <a href="/pdkgiveawaytool.html">PDK Giveaway Tool</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myNavigation()">&#9776;</a>
+    </div>
   </header>
   <div class="container">
     <body>
@@ -23,17 +37,13 @@
         
         <div class="column" id="pockets_section">
           <div class="card">
-            <img src="assets/Abyss 5.jpg" alt="pockets" style="width:100%">
+            <img src="assets/Pockets2.jpg" alt="pockets" style="width:100%">
             <div class="card_container">
               <h2>PocketsDK</h2>
               <p class="subtitle">Hi! I'm Pockets. A dad, a husband, and a gamer. Exclusively in that order. </p>
-              <div class="centered">
-                <a href="#" class="square_btn">Let's chat on Discord!</a>
-              </div>
-                <hr>
-            </div><!-- End of section title -->
-            <div class="section_footer">
-              <span class="social_icons">
+              
+            <div class="centered">
+              <span class="social_icons icon_container">
                 <a href="https://youtube.com/pocketsdk" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://discord.gg/mMCKAeY" target="_blank"><i class="fab fa-discord"></i></a>
                 <a href="https://twitter.com/Pocketsdk" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -41,10 +51,12 @@
                 <a href="https://www.patreon.com/pocketsdk" target="_blank"><i class="fab fa-patreon"></i></a>
               </span>
               <hr>
-              <div class="card_container">
-                <p class="subtitle">Try out the ad-free <a href="pdkgiveawaytool.html"><span class="PDK_link">PDK Giveaway Tool!</span></a></p>
+                <a href="#" class="square_btn">Let's chat on Discord!</a>
               </div>
-              </div><!-- End of section footer -->
+<!--         <div class="card_container">
+                <p class="subtitle">Try out the ad-free <a href="pdkgiveawaytool.html"><span class="PDK_link">PDK Giveaway Tool!</span></a></p>
+              </div>-->     
+            </div><!-- End of card_Container -->
           </div><!-- End of card -->
         </div><!-- End of pockets div -->
 
@@ -65,13 +77,13 @@
       </div><!-- End of 2-column layout div -->
 
     </body>
-
+  </div><!-- End of container with body -->
   <footer class="footer">
    
-    <div class="copyright">
-      <p>Copyright 2020 PocketsDK / Kriszdev</p>
+    <div class="centered">
+      <p>Copyright @ 2020 PocketsDK / Kriszdev</p>
     </div>
   </footer>
 
-  </div><!-- End of container with body -->
+
 </html>
