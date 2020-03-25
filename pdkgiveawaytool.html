@@ -14,37 +14,40 @@
     <header>
         
     </header>
-  <body>
-    <h1>PocketsDK's Giveaway Tool</h1>
+    <body>
+        <div class="tool_backdrop">
+            <h1>PocketsDK's Giveaway Tool</h1>
 
-    <section>
-        <h2>
-            Enter data:
-        </h2>           
-            <label for="title">Contest Title:</label><br>
-            <input type="text" id="title_input" name="title" required autofocus><br>
-            <label for="date">Draw Date:</label><br>
-            <input type="date" id="date_input" name="date" required><br>
-            <label for="contestants">Copy paste the names of the contestants (one name per line with no punctuation) in the box below:</label><br>
-            <textarea id="contestants_input" name="contestants" cols="40" rows="5" required></textarea><br>
-            <input type="submit" onclick="showInfo();"><br>
-    </section>
-    <section>
-        <h2>
-            Contest Info:
-        </h2>
-        <span id='contestTitle'></span>
-        <p id='contestDate'></p>
-        <p id='numberOfContestants'></p>
-        <p id='contestants'></p>
-    </section>
-    <section>
-        <h2>
-            It is time to choose our winner!
-        </h2>
-        <button type="button" onclick="showWinner();">Let's roll!</button>
-        <p id='winner'></p>
-    </section>
-
-  </body>
+            <section class="card tool">
+                <h2>
+                    Enter contest data:
+                </h2>     
+                <div>      
+                    <label for="title">Contest Title:</label><br>
+                    <input type="text" id="title_input" name="title" required autofocus><br>
+                    <label for="date">Draw Date:</label><br>
+                    <input type="date" id="date_input" name="date" required><br>
+                    <label for="contestants">Copy paste the names of the contestants (one name per line with no punctuation) in the box below:</label><br>
+                    <textarea id="contestants_input" name="contestants" cols="40" rows="5" required></textarea><br>
+                    <input class="square_btn" type="submit" onclick="showInfo();"><br>
+                </div>
+            </section>
+            <section class="card tool">
+                <h2>
+                    Contest Info:
+                </h2>
+                <span id='contestTitle'></span>
+                <p id='contestDate'></p>
+                <p id='numberOfContestants'></p>
+                <p id='contestants'></p>
+            </section>
+            <section class="card tool">
+                <h2>
+                    It's time to choose our winner!
+                </h2>
+                <button class="square_btn" type="button" onclick="showWinner();">Let's roll the dice!</button>
+                <p id='winner'></p>
+            </section>
+        </div>
+    </body>
 </html>
