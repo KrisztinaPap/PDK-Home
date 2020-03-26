@@ -105,6 +105,7 @@ body {
   border-radius: 10px; /* 5px rounded corners */
   display: block;
   margin: auto;
+  max-width: 700px;
 }
 
 img {
