@@ -375,3 +375,16 @@ textarea {
   }
 
 }
+
+/****************************8 Resources pages **************************/
+
+.resource_list {
+  padding-top: 2em;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.resource_list p a {
+  color: var(--pdk-blue);
+}
