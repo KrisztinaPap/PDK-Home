@@ -27,21 +27,26 @@
               <a href="/pdkgiveawaytool.html" class="active">PDK Giveaway Tool</a>
             </div>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="myNavigation()">&#9776;</a>
+          <a href="javascript:void(0);" class="icon" onclick="myNavigation()"></a>
         </div>
     <body>
+       
+            
         <div class="tool_backdrop">
-            <h1>PocketsDK's Giveaway Tool</h1>
-
-            <section class="card tool">    
-                <div>      
+            <section>    
+                <div class="tool">
+                    <h1>PocketsDK's Giveaway Tool</h1>
+                </div>
+                <div class="card tool">      
+                    
                     <label for="title">Contest Title</label><br>
                     <input type="text" id="title_input" name="title" required autofocus><br>
                     <label for="contestants">Contestants<br>(copy/paste - 1 per line - no punctuation)</label><br>
                     <textarea id="contestants_input" name="contestants" cols="40" rows="10" required></textarea><br>
+                    <button class="square_btn button" onclick="eraseText();">Clear</button>
+                    <button class="square_btn button" onclick="showWinner();">Roll the dice!</button>
+                    <p id='winner'></p>
                 </div>
-                <button class="square_btn button" onclick="showWinner();">Roll the dice!</button>
-                <p id='winner'></p>
             </section>
         </div>
     </body>

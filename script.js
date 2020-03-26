@@ -20,3 +20,7 @@ function showWinner() {
     document.getElementById('winner').innerHTML = 
         "The winner of the " + contestTitle.toUpperCase() + " contest is " + winner.toUpperCase() + "! Congratulations!";
 }
+
+function eraseText() {
+  document.getElementById("contestants_input").value = "";
+}

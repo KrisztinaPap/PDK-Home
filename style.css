@@ -328,10 +328,11 @@ hr {
   background: url(/assets/Abyss\ 3.jpg);
   min-height: 100vh;
   font-size: 1em;
+  display: flex;
+  justify-content: center;
 }
+
 .tool {
-  padding: 2em;
-  margin: 2em;
   text-align: center;
 }
 
