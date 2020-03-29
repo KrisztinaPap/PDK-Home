@@ -379,9 +379,9 @@ textarea {
 /****************************8 Resources pages **************************/
 
 .resource_list {
-  padding-top: 2em;
+  padding-top: 1.4em;
   font-size: 1.4em;
-  line-height: 1.2em;
+  line-height: 2em;
   text-align: center;
 }
 
