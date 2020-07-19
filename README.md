@@ -3,7 +3,7 @@
 Custom website built for PocketsDK, a YouTube content creator.
 
 
-## Page features:
+## Website features:
 - Fully responsive
 - Minimalist design
 - Social icons from Fontawesome
@@ -12,5 +12,11 @@ Custom website built for PocketsDK, a YouTube content creator.
 - Resources will be added as client provides them
 - Deployed with Netlify
 
+## Screenshots:
 
-![PDK home page screenshot](https://github.com/KrisztinaPap/PDK-Home/blob/master/assets/PDK-screenshot.PNG "PDK home page")
+
+![PDK home page - desktop screen](https://github.com/KrisztinaPap/PDK-Home/blob/master/assets/PDK-screenshot.PNG "PDK home page - desktop screen")
+
+![PDK home page - mobile screen](https://github.com/KrisztinaPap/PDK-Home/blob/master/assets/PDK-screenshot2.PNG "PDK home page - mobile screen")
+
+![DK Giveaway tool](https://github.com/KrisztinaPap/PDK-Home/blob/master/assets/PDK-screenshot3.PNG "PDK Giveaway tool")
