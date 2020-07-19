@@ -1,6 +1,7 @@
-# PDK-Home
+# [PDK-Home](https://pocketsdk.org)
 
 Custom website built for PocketsDK, a YouTube content creator.
+
 
 ## Page features:
 - Fully responsive
@@ -10,5 +11,6 @@ Custom website built for PocketsDK, a YouTube content creator.
 - Giveaway Tool coded with JavaScript (online content creators can use it to choose a random winner for their contests)
 - Resources will be added as client provides them
 - Deployed with Netlify
+
 
 ![PDK home page screenshot](https://github.com/KrisztinaPap/PDK-Home/blob/master/assets/PDK-screenshot.PNG "PDK home page")
