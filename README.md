@@ -16,6 +16,10 @@ PocketsDK creates YouTube content for PC video games with his main passion being
 - Resources will be added as client provides them
 - Deployed with Netlify
 
+## References:
+
+[Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
 ## Screenshots:
 
 ### PDK home page - desktop screen:
